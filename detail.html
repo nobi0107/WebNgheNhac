@@ -1,0 +1,424 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<link href="css/style.css" rel="stylesheet"/>
+		<link href="vendor/fontawesome/css/all.css" rel="stylesheet"/>
+		<link href="css/style-detail.css" rel="stylesheet"/>
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>	
+	</head>
+	<body>
+		<header>
+			<div class="container-fluid" style="padding:0">
+				<div class="container-fluid slide">	
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		
+							<!-- Indicators -->
+							<ul class="carousel-indicators">
+							  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							  <li data-target="#myCarousel" data-slide-to="1"></li>
+							  <li data-target="#myCarousel" data-slide-to="2"></li>
+							  <li data-target="#myCarousel" data-slide-to="3"></li>
+							  <li data-target="#myCarousel" data-slide-to="4"></li>
+							  <li data-target="#myCarousel" data-slide-to="5"></li>
+							  
+							 
+							</ul>
+							
+							<!-- The slideshow -->
+								<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="img/slide4.jpg" style="width: 100%">
+								</div>
+								<div class="carousel-item">
+									<img src="img/slide2.jpg" style="width: 100%">
+								</div>
+								<div class="carousel-item">
+									<img src="img/slide1.jpg" style="width: 100%">
+								</div>
+								<div class="carousel-item">
+									<img src="img/slide6.jpg" style="width: 100%">
+								</div>
+								<div class="carousel-item">
+									<img src="img/slide5.jpg" style="width: 100%">
+								</div>
+								<div class="carousel-item">
+									<img src="img/slide3.jpg" style="width: 100%">
+								</div>
+								</div>
+								
+								<!-- Left and right controls -->
+								<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+								</a>
+								<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+								</a>
+							</div>
+							
+			
+			</div>
+			<div class="header">
+			<div class="container">
+				<div class="row nav">
+					<div class="col-md-2 col-2 logo">
+						<a href="index.html"><img src="img/logo.png" alt=""></a>
+					</div>
+					<div class="col-md-1 col-1">
+					<div class="row">
+					<div class="col-md-6 col-6 nav-phim">
+							<a href="">PHIM</a>
+							<div class="sub-menu">
+								<ul>
+									<li><a href="">Hành động</a></li>
+									<li><a href="">Võ thuật</a></li>
+									<li><a href="">Hài hước</a></li>
+									<li><a href="">Tình cảm</a></li>
+									<li><a href="">Viễn tưởng</a></li>
+								</ul>
+							</div>
+					</div>
+					<div class="col-md-6 col-6 nav-nhac">
+								<a href="">NHẠC</a>
+								<div class="sub-menu">
+									<ul>
+										<li><a href="">Bài hát</a></li>
+										<li><a href="">MV</a></li>
+										<li><a href="">Album</a></li>
+										<li><a href="">EDM</a></li>
+										<li><a href="">Bảng xếp hạng</a></li>
+										<li><a href="">Chủ đề</a></li>
+										<li><a href="">Top hit</a></li>
+										<li><a href="">Thể loại</a></li>
+										<li><a href="">Nghệ sĩ</a></li>
+									</ul>
+								</div>
+								</div>
+							</div>
+					</div>
+				<!----search-->
+				<div class="col-md-1 col-1"></div>
+					<div class="col-md-6 col-6 search">
+						<input id="search" type="text" placeholder="Từ khóa tìm kiếm....">
+						<div class="button-search"><a href=""><i class="fa fa-search"></i></a></div>
+					</div>
+					<div class="col-md-2 col-2 login">
+						<a href="login.html"><strong>Đăng nhập</strong></a>
+						<img src="img/login.png" alt="">
+					</div>
+				</div>
+				</div>
+			</div>
+	
+				<!--slide-->
+				
+		</div>
+		</header>
+		<main>
+			<selection class="MusicBox">
+				<div class="container-fluid" style="height: 900px;">
+					<div id="musicbox" class="container-musicbox">
+					</div>
+					<div id="app-cover">
+						<div id="player">
+							<div id="player-track">
+								<div id="album-name"></div>
+								<div id="track-name"></div>
+								<div id="track-time">
+									<div id="current-time"></div>
+									<div id="track-length"></div>
+								</div>
+								<div id="s-area">
+									<div id="ins-time"></div>
+									<div id="s-hover"></div>
+									<div id="seek-bar"></div>
+								</div>
+							</div>
+							<div id="player-content">
+								<div id="album-art">
+									<img src="img/SaiGonDauLongQua.jpg" class="active" id="_1">
+									<img src="img/Thangmayemnhoanh.jpg" id="_2">
+									<img src="img/NayEmGiOi.jpg" id="_3">
+									<img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_4.jpg" id="_4">
+									<img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_5.jpg" id="_5">
+									<div id="buffer-box">Buffering ...</div>
+								</div>
+								<div id="player-controls">
+									<div class="control">
+										<div class="button" id="play-previous">
+											<i class="fas fa-backward"></i>
+										</div>
+									</div>
+									<div class="control">
+										<div class="button" id="play-pause-button">
+											<i class="fas fa-play"></i>
+										</div>
+									</div>
+									<div class="control">
+										<div class="button" id="play-next">
+											<i class="fas fa-forward"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</selection>
+			<section class="PlayList-Box">
+				<h2 class="title" style="color: white;">
+					Play List
+				</h2>
+				<span class="line"></span>
+				<ul class="list-group playlist-group" style="border-radius: 5rem;">
+					<li class="list-group-item" onclick="intnitPlayer()">
+						<span class="badge">1</span>
+						<img src="img/SaiGonDauLongQua.jpg">
+						<a href="#"class="btn Music-name" role="button">Sài Gòn Đau Lòng Quá</a>
+						<span class="Singer">Hứa Kim Tuyền ft Hoàng Duyên</span>
+						<div class="playlist-addon">
+							<i class="fa fa-headphones"></i>
+							<span>102.221</span>							
+						</div>
+						<a href="#" type="button" class="btn share"><i class="fa fa-share"></i></a>						
+					</li>
+					<li class="list-group-item">
+						<span class="badge">2</span>
+						<img src="img/NayEmGiOi.jpg">
+						<a href="#" class="btn Music-name" role="button">Này Em Gì Ơi</a>
+						<span class="Singer">Lăng LD</span>
+						<div class="playlist-addon">
+							<i class="fa fa-headphones"></i>
+							<span>102.221</span>							
+						</div>
+						<a href="#" type="button" class="btn share"><i class="fa fa-share"></i></a>						
+					</li>					
+					<li class="list-group-item">
+						<span class="badge">3</span>
+						<img src="img/Thangmayemnhoanh.jpg">
+						<a href="#" class="btn Music-name" role="button">Tháng Mấy Em Nhớ Anh</a>
+						<span class="Singer">Hà Anh Tuấn</span>
+						<div class="playlist-addon">
+							<i class="fa fa-headphones"></i>
+							<span>102.221</span>							
+						</div>
+						<a href="#" type="button" class="btn share"><i class="fa fa-share"></i></a>						
+					</li>
+					<li class="list-group-item">
+						<span class="badge">3</span>
+						<img src="img/Thangmayemnhoanh.jpg">
+						<a href="#" class="btn Music-name" role="button">Tháng Mấy Em Nhớ Anh</a>
+						<span class="Singer">Hà Anh Tuấn</span>
+						<div class="playlist-addon">
+							<i class="fa fa-headphones"></i>
+							<span>102.221</span>							
+						</div>
+						<a href="#" type="button" class="btn share"><i class="fa fa-share"></i></a>						
+					</li>
+					<li class="list-group-item">
+						<span class="badge">3</span>
+						<img src="img/Thangmayemnhoanh.jpg">
+						<a href="#" class="btn Music-name" role="button">Tháng Mấy Em Nhớ Anh</a>
+						<span class="Singer">Hà Anh Tuấn</span>
+						<div class="playlist-addon">
+							<i class="fa fa-headphones"></i>
+							<span>102.221</span>							
+						</div>
+						<a href="#" type="button" class="btn share"><i class="fa fa-share"></i></a>						
+					</li>					
+					
+				  </ul>
+			</section>
+			<section class="Lyric-Box">
+				<h2 class="title">
+					Lời Bài Hát
+				</h2>
+				<span class="line"></span>
+				<div id="moreLyric" class="lyric" style="height:100vh">
+					Cầm tấm vé trên tay<br><br>
+
+					Em bay đến nơi xa<br><br>
+
+					Sài Gòn đau lòng quá<br><br>
+
+					Toàn kỷ niệm chúng ta.<br><br>
+
+					Phải đi xa đến đâu?<br><br>
+
+					Thời gian quên mất bao lâu?<br><br>
+
+					Để trái tim em bình yên như ngày đầu tiên.<br><br>
+
+					
+
+					Mình đã từng hứa<br><br>
+
+					Bên nhau hết tháng năm dài<br><br>
+
+					Yêu đến khi ngừng hơi thở<br><br>
+
+					Đến khi ngừng mơ.<br><br>
+
+					Nắm chặt tay đi hết nhân thế này<br><br>
+
+					Chân trời hằn chân ta<br><br>
+
+					Vô tận là chúng ta.<br><br><br>
+
+					
+
+					Mình đã từng hứa<br><br>
+
+					Đi qua hết bao thăng trầm<br><br>
+
+					Cho dẫu mai này xa rời<br><br>
+
+					Vẫn không hề đổi dời.<br><br>
+
+					Có ngờ đâu, đã sớm vỡ tan tành<br><br>
+
+					Nhặt từng mảnh vỡ xếp vào vali.<br><br><br>
+
+					
+
+					Cứ càng yêu, cứ càng đau<br><br>
+
+					Cứ càng quên rồi lại muốn đi thật nhiều<br><br>
+
+					Tokyo hay Seoul<br><br>
+
+					Paris hay New York<br><br>
+
+					Đi càng xa, càng không thể quên.<br>
+					<br>
+					<br>									
+
+					ĐK:<br>
+					<br>
+					<br>					
+
+					Cầm tấm vé trên tay<br><br>
+
+					Em bay đến nơi xa<br><br>
+
+					Sài Gòn đau lòng quá<br><br>
+
+					Toàn kỷ niệm chúng ta.<br><br>
+
+					Phải đi xa đến đâu?<br><br>
+
+					Thời gian quên mất bao lâu?<br><br>
+
+					Để trái tim em bình yên như ngày đầu tiên.<br><br>
+					<br>
+					<br>
+					<br>				
+
+					* Ngày tôi chưa từng biết tôi sẽ yêu em nhiều như thế này<br><br>
+
+					Để rồi khi ta cách xa tim này nát ra<br><br>
+
+					Ngày người chưa đến mang theo giấc mơ, rồi lại bỏ rơi lúc tôi đang chờ.<br><br>
+
+					Chờ người đến dịu xoa tổn thương tôi đã từng.<br><br>
+					<br>
+					<br>
+					<br>				
+				</div>
+				<button class="btn overflow-btn" onclick="moreText()"><==Xem Thêm/Đóng Lại==></button>				
+			</section>
+		</main>
+		<footer>
+			<div class="container-fluid" style="background-color: #f8f8f8;margin-top: 50px;">
+				<div class="container">
+					<div class="row about-footer">
+						<div class="col-md-3">
+							<div class="footer-title">
+								<h4 class="footer-item-title">GIỚI THIỆU</h4>
+								<p style="margin-bottom: 0">
+									PhuongDong Music trang nghe nhạc thịnh hành với hàng nghìn bài nhạc đang hiện hữu trên thị trường,với sự hợp tác và phát triển của Founder:Phương Đông, Co-Founder:Thành Đạt,Xuân Đại
+								</p>
+								<img src="img/android-app.png">
+								<img src="img/apple-app.png">
+							</div>
+						</div>
+						<div class="col-md-3 ">
+							<h4 class="footer-item-title">LIÊN KẾT</h4>
+							<ul class="link">
+								<li><a href="">Tìm kiếm</a></li>
+								<li><a href="">Album</a></li>
+								<li><a href="">EDM</a></li>
+								<li><a href="">Bảng xếp hạng</a></li>
+								<li><a href="">Chủ đề</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<h4 class="footer-item-title">THÔNG TIN LIÊN HỆ</h4>
+							<ul class="footer-contact">
+								<li>
+									<div class="row">
+										<div class="col-2">
+										<i class="fas fa-map-marker-alt"></i>
+										</div>
+										<div class="col-10">
+									<p>99/20/23 Nguyễn Văn Linh,phường Tân Thuận Tây, Quận 7, Tp.Hồ Chí Minh</p>
+									</div>
+								</li>
+								<li>
+									<div class="row">
+										<div class="col-2">
+										<i class="fas fa-phone-alt"></i>
+										</div>
+										<div class="col-10">
+										<p>0824.26.46.86</p>
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<div class="row">
+										<div class="col-2">
+										<i class="fas fa-envelope"></i>
+										</div>
+										<div class="col-10">
+										<p>phuongdong12a3@gmail.com</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-3 col-12">
+							<h4 class="footer-item-title">FANPAGE</h4>
+							<a href=""><img src="img/fanpage.png" class="img-fanpage"></a>
+						</div>
+						<div class="col-md-12 text-center">
+							<ul class="social">
+								<li><a href=""><i class="fab fa-facebook" style="color: #3b5999"></i></a>
+								</li>
+								<li><a href=""><i class="fab fa-google" style="color: #ed1c24"></i></a>
+								</li>
+								<li><a href=""><i class="fab fa-twitter" style="color: #00aced"></i></a>
+								</li>
+								<li><a href=""><i class="fab fa-youtube" style="color: #f70000"></i></a>
+								</li>
+								<li><a href=""><i class="fab fa-skype" style="color: #01a9eb"></i></a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-12 text-center footer-bottom text-footer">	
+							<ul>
+								<li><a href="">Tìm kiếm</a></li>|
+								<li><a href="">Giới thiệu</a></li>|
+								<li><a href="">Chính sách thành viên</a></li>|
+								<li><a href="">Chính sách bảo mật</a></li>|
+								<li><a href="">Điều khoản dịch vụ</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>	
+		</footer>
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/playmusic.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	</body>
+</html>
